@@ -1,3 +1,14 @@
+import {
+    SVGFacebookSquareIcon, 
+    SVGTwitterIcon,
+    SVGDribbleIcon, 
+    SVGInstagramIcon, 
+    SVGSkypeIcon, 
+    SVGMediumIcon, 
+    SVGGitIcon,
+} from '@components/SVG'
+
+
 export const siteInfo = {
     siteName: "Startup 3", 
     phoneNumber: "+1 555 505 5050", 
@@ -61,23 +72,92 @@ export const crew = [
             {
                 name: "twitter", 
                 link: "https://twitter.com", 
-                icon: "@assets/icons/fa-twitter.svg"
+                icon: <SVGTwitterIcon />,
             },
             {
                 name: "facebook", 
                 link: "https://facebook.com", 
-                icon: "@assets/icons/fa-facebook-square.svg"
+                icon: <SVGFacebookSquareIcon />,
             }, 
             {
                 name: "dribble", 
                 link: "https://dribble.com", 
-                icon: "@assets/icons/fa-dribble.svg"
+                icon: <SVGDribbleIcon />,
             },
             {
                 name: "instagram", 
                 link: "https://instagram.com", 
-                icon: "@assets/icons/fa-instagram.svg"
+                icon: <SVGInstagramIcon />,
             }, 
         ]
-    }
+    }, 
+    {
+        name: "Colin Timmons", 
+        position: "UX Designer", 
+        image: "/images/collin-timmons.png",
+        socials: [
+            {
+                name: "twitter", 
+                link: "https://twitter.com", 
+                icon: <SVGTwitterIcon />,
+            },
+            {
+                name: "dribble", 
+                link: "https://dribble.com", 
+                icon: <SVGDribbleIcon />,
+            },
+        ]
+    }, 
+    {
+        name: "Miguel Osborne", 
+        position: "Front-end Developer", 
+        image: "/images/miguel-osbourne.png",
+        socials: [
+            {
+                name: "skype", 
+                link: "https://twitter.com", 
+                icon: <SVGSkypeIcon />,
+            },
+            {
+                name: "medium", 
+                link: "https://medium.com", 
+                icon: <SVGMediumIcon />,
+            },
+            {
+                name: "git", 
+                link: "https://github.com", 
+                icon: <SVGGitIcon />
+            },
+        ]
+    },
+    {
+        name: "Taylor Simon", 
+        position: "Product Manager", 
+        image: "/images/taylor-simon.png",
+        socials: [
+            {
+                name: "twitter", 
+                link: "https://twitter.com", 
+                icon: <SVGTwitterIcon />,
+            },
+            {
+                name: "instagram", 
+                link: "https://instagram.com", 
+                icon: <SVGInstagramIcon />,
+            }, 
+        ]
+    }, 
+    {
+        name: "Steven MacAlister", 
+        position: "Copyrighter", 
+        image: "/images/steven-macalister.png",
+        socials: [
+            {
+                name: "twitter", 
+                link: "https://twitter.com", 
+                icon: <SVGTwitterIcon />,
+            },
+
+        ]
+    },
 ];

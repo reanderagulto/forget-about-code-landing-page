@@ -1,7 +1,43 @@
-.main-header {
-    font-size: $font-4xl;
+.section-header {
     font-style: normal;
     font-weight: $font-strong;
-    line-height: 86px; /* 119.444% */
-    letter-spacing: -1px;
+
+    &__xlg {
+        font-size: $font-4xl;
+        line-height: 86px; /* 119.444% */
+        letter-spacing: -1px;
+    }
+
+    &__lg {
+        font-size: $font-3xl;
+        line-height: 70px; /* 120.69% */
+        letter-spacing: -1px;
+    }
+
+    &__md {
+        font-size: $font-2xl;
+        line-height: 52px; /* 123.81% */
+        letter-spacing: -0.4px;
+    }
+
+    &__sm {
+        font-size: $font-md;
+        line-height: 32px;
+        font-weight: $font-medium;
+    }
+}
+
+.menu {
+    &__item { 
+        font-size: $font-sm;
+        font-style: normal;
+        font-weight: $font-medium;
+        line-height: 26px;
+        opacity: 1;
+        transition: all 0.3s ease-out;
+
+        &.active { 
+            opacity: 0.3;
+        }
+    }
 }

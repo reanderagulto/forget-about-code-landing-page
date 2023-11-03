@@ -1,3 +1,11 @@
+import { 
+    SVGDribbleIcon, 
+    SVGBehanceIcon,
+    SVGTwitterIcon, 
+    SVGFacebookIcon,
+    SVGGooglePlusIcon
+} from "@components/SVG";
+
 export const headerMenu = [
     {
         name: "Home",
@@ -22,12 +30,14 @@ export const headerMenu = [
     {
         name: "dribble", 
         uri: "/dribble",
-        isIcon: true
+        isIcon: true, 
+        icon: <SVGDribbleIcon fill="#FFF" />
     }, 
     {
         name: "behance", 
         uri: "/behance", 
-        isIcon: true
+        isIcon: true,
+        icon: <SVGBehanceIcon fill="#FFF" />
     }
 ];
 
@@ -62,16 +72,16 @@ export const socialLinks = [
     {
         name: "twitter", 
         uri: "https://www.twitter.com",
-        icon: "@assets/images/fa-twitter.svg"
+        icon: <SVGTwitterIcon fill="#FFF" />
     }, 
     {
         name: "facebook", 
         uri: "https://www.facebook.com",
-        icon: "@assets/images/fa-facebook.svg",
+        icon: <SVGFacebookIcon fill="#FFF" />,
     }, 
     {
         name: "google-plus", 
         uri: "https://plus.google.com",
-        icon: "@assets/images/fa-google-plus.svg"
+        icon: <SVGGooglePlusIcon fill="#FFF" />
     }
 ];

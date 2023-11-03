@@ -1,0 +1,40 @@
+.client-card {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    padding: 35px 28px 23px 35px;
+    gap: 30px;
+
+    &__image {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 179px;
+
+        &--desc {
+            font-size: $font-sm;
+            font-style: normal;
+            font-weight: $font-medium;
+            line-height: 28px;
+            width: 307px;
+        }
+
+        &--name {
+            font-size: $font-xxsm;
+            font-style: normal;
+            font-weight: $font-strong;
+            line-height: 26px; /* 185.714% */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.3;
+        }
+    }
+
+
+}
