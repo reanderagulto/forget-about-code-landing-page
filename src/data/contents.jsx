@@ -94,7 +94,7 @@ export const crew = [
     {
         name: "Colin Timmons", 
         position: "UX Designer", 
-        image: "/images/collin-timmons.png",
+        image: "/images/colin-timmons.png",
         socials: [
             {
                 name: "twitter", 
@@ -160,4 +160,66 @@ export const crew = [
 
         ]
     },
+];
+
+export const features = [
+    '2 GB of space', 
+    '14 days of backups', 
+    'Social integrations', 
+    'Client billing',
+    'Remote access', 
+    'Custom domain', 
+    '24 hours support',
+    'Admin tools', 
+    'Collaboration tools',
+    'User management'
+];
+
+export const pricingPlans = [
+    {
+        name: "Starter", 
+        price: 9.99, 
+        currency: '$', 
+        features: [
+            '2 GB of space', 
+            '14 days of backups', 
+            'Social integrations', 
+            'Client billing'
+        ], 
+        link: "https://google.com"
+    }, 
+    {
+        name: "Professional", 
+        price: 19.99, 
+        currency: '$', 
+        features: [
+            '2 GB of space', 
+            '14 days of backups', 
+            'Social integrations', 
+            'Client billing',
+            'Remote access', 
+            'Custom domain', 
+            '24 hours support'
+        ], 
+        link: "https://google.com", 
+        active: true
+    }, 
+    {
+        name: "Team", 
+        price: 49.99, 
+        currency: '$', 
+        features: [
+            '2 GB of space', 
+            '14 days of backups', 
+            'Social integrations', 
+            'Client billing',
+            'Remote access', 
+            'Custom domain', 
+            '24 hours support',
+            'Admin tools', 
+            'Collaboration tools',
+            'User management'
+        ], 
+        link: "https://google.com"
+    }, 
 ];

@@ -1,33 +1,24 @@
 import React from 'react';
 import Input from '@components/Input';
 import Button from '../components/Button';
-import { listOfReviews } from '@data/contents';
+import { pricingPlans } from '@data/contents';
 import ClientCard from '@components/ClientCard';
-
-{/* <Input 
-    className="form-input__lg"
-    placeholder="Your Email"
-    id="your_email"
-/>
-<Button 
-    buttonType="button"
-    className="btn__action-primary"
-    id="btn-submit"
-    label="Submit"
-/> */}
+import CrewCard from '@components/CrewCard';
+import PricingCard from '@components/PricingCard';
 
 const Homepage = () => {
     return (
         <div className="container" style={{
             background: '#000'
         }}>
-            {listOfReviews && listOfReviews.map((item, index) => {
+            {pricingPlans && pricingPlans.map((item, index) => {
                 return (
-                    <ClientCard 
+                    <PricingCard 
                         key={index}
                         name={item.name}
-                        image={item.image}
-                        desc={item.review}
+                        price={item.price}
+                        currency={item.currency}
+                        planFeatures={item.features}
                     />
                 )
             })}
