@@ -1,0 +1,63 @@
+.pricing-card {
+    width: 100%;
+    max-width: 370px;
+    padding: 64.2px 44px 56px;
+    border-radius: 8px;
+    border: 2px solid #ffffff50;
+
+    &__plan {
+        display: flex; 
+        flex-direction: column;
+        gap: 22.6px;
+        margin-bottom: 44.6px;
+
+        &-name {
+            font-size: $font-md;
+            font-style: normal;
+            font-weight: $font-medium;
+            line-height: 32px;
+        }
+
+        &-price {
+            display: flex;
+            font-size: $font-3xl;
+            font-style: normal;
+            font-weight: $font-strong;
+            line-height: 70px; /* 120.69% */
+            position: relative;
+            width: max-content;
+
+            span {
+                font-size: $font-xsm;
+                font-style: normal;
+                font-weight: $font-regular;
+                line-height: 26px;
+                position: absolute;
+                right: -14px;
+                top: 11.6px;
+            }
+        }
+    }
+
+    &__feature-item {
+        font-size: $font-xsm;
+        font-style: normal;
+        font-weight: $font-regular;
+        line-height: 26px;
+        opacity: 0.7;
+        margin-bottom: 10px;
+        margin-left: 27px;
+
+        &.active {
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: 0;
+        }
+
+        &:last-of-type {
+            margin-bottom: 10px;
+        }
+    }
+}
