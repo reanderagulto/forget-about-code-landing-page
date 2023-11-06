@@ -18,24 +18,26 @@ export const headerMenu = [
         isIcon: false
     }, 
     {
-        name: "pricing", 
+        name: "Pricing", 
         uri: "/pricing", 
         isIcon: false
     }, 
     {
-        name: "blog", 
+        name: "Blog", 
         uri: "/blog",
         isIcon: false
     }, 
     {
         name: "dribble", 
-        uri: "/dribble",
+        uri: "https://dribble.com",
+        external: true,
         isIcon: true, 
         icon: <SVGDribbleIcon fill="#FFF" />
     }, 
     {
         name: "behance", 
-        uri: "/behance", 
+        uri: "https:://behance.com", 
+        external: true,
         isIcon: true,
         icon: <SVGBehanceIcon fill="#FFF" />
     }

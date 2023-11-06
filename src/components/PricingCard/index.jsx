@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { features } from '@data/contents';
 import { SVGCheckIcon } from '@components/SVG';
-import Button from '../components/Button';
+import Button from '@components/Button';
 
 
 const PricingCard = ({
@@ -35,7 +35,10 @@ const PricingCard = ({
             })} 
         </div>
         <Button 
-            
+            id={'btn-' + name.toLowerCase()}
+            className="btn__action-transparent"
+            isLink={true}
+            label="Get Started"
         />
     </div>
   )
